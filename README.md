@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-These Readme file contains the instruction to run this application.
+This Readme file contains the instruction to run this application.
 
 ### Prerequisites
 
