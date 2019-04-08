@@ -3,9 +3,6 @@ package com.assignment.bootstrap;
 import com.assignment.domain.entity.Event;
 import com.assignment.service.EventService;
 import com.assignment.service.Parser;
-import com.assignment.service.implementation.EventServiceImpl;
-import com.assignment.service.implementation.LogParser;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -50,7 +47,7 @@ public class BootstrapTest {
 
         Mockito.when(logParser.parseFile(Mockito.anyString())).thenReturn(expectedEventList);
 
-        bootstrap.run(args);
+        bootstrap.validateAndRun(args);
 
         verify(logParser, times(1)).parseFile(Mockito.anyString());
         verify(eventService, times(1)).createEvent(event);
@@ -63,7 +60,7 @@ public class BootstrapTest {
         expectedEventList.add(event);
         String args[] = {"events"};
 
-        bootstrap.run(args);
+        bootstrap.validateAndRun(args);
 
         verify(logParser, times(0)).parseFile(Mockito.anyString());
         verify(eventService, times(0)).createEvent(event);

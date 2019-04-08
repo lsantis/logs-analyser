@@ -21,6 +21,6 @@ public class Application implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         //Use static utility to validate args and delegate to the service LogParser
-        bootstrap.run(args);
+        bootstrap.validateAndRun(args);
     }
 }

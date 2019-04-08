@@ -25,8 +25,8 @@ public class Bootstrap {
     @Autowired
     private EventService eventService;
 
-    public void run(String args[]) throws FileNotFoundException {
-        log.info("Bootstrap.run starting method");
+    public void validateAndRun(String args[]) throws FileNotFoundException {
+        log.info("Bootstrap.validateAndRun starting method");
 
         boolean isValidated = false;
         List<Event> eventList;
@@ -45,7 +45,7 @@ public class Bootstrap {
         } catch (IncorrectFileExtensionException ex) {
             log.error("Error validating the file", ex);
         } finally {
-            log.info("Bootstrap.run method completed");
+            log.info("Bootstrap.validateAndRun method completed");
         }
     }
 
