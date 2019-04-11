@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.assignment.bootstrap.BootstrapTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-07T20:36:34" hostname="Lucianos-MacBook-Air.local" time="0.152">
+<testsuite name="com.assignment.bootstrap.BootstrapTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-11T21:50:50" hostname="Lucianos-MacBook-Air.local" time="0.35">
   <properties/>
-  <testcase name="runWithInvalidInputTest" classname="com.assignment.bootstrap.BootstrapTest" time="0.126"/>
-  <testcase name="runWithValidInputTest" classname="com.assignment.bootstrap.BootstrapTest" time="0.024"/>
-  <system-out><![CDATA[21:36:34.292 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.run starting method
-21:36:34.296 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateInput method starting
-21:36:34.298 [Test worker] ERROR com.assignment.bootstrap.Bootstrap - Error validating the file
+  <testcase name="runWithInvalidInputTest" classname="com.assignment.bootstrap.BootstrapTest" time="0.282"/>
+  <testcase name="runWithValidInputTest" classname="com.assignment.bootstrap.BootstrapTest" time="0.064"/>
+  <system-out><![CDATA[22:50:50.125 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateAndRun starting method
+22:50:50.131 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateInput method starting
+22:50:50.135 [Test worker] ERROR com.assignment.bootstrap.Bootstrap - Error validating the file
 com.assignment.exception.IncorrectFileExtensionException: Incorrect file extension
 	at com.assignment.bootstrap.Bootstrap.validateInput(Bootstrap.java:58)
-	at com.assignment.bootstrap.Bootstrap.run(Bootstrap.java:35)
-	at com.assignment.bootstrap.BootstrapTest.runWithInvalidInputTest(BootstrapTest.java:66)
+	at com.assignment.bootstrap.Bootstrap.validateAndRun(Bootstrap.java:35)
+	at com.assignment.bootstrap.BootstrapTest.runWithInvalidInputTest(BootstrapTest.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,11 +62,11 @@ com.assignment.exception.IncorrectFileExtensionException: Incorrect file extensi
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:745)
-21:36:34.304 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.run method completed
-21:36:34.378 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.run starting method
-21:36:34.378 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateInput method starting
-21:36:34.378 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateInput method completed
-21:36:34.386 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.run method completed
+22:50:50.198 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateAndRun method completed
+22:50:50.338 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateAndRun starting method
+22:50:50.344 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateInput method starting
+22:50:50.346 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateInput method completed
+22:50:50.370 [Test worker] INFO com.assignment.bootstrap.Bootstrap - Bootstrap.validateAndRun method completed
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

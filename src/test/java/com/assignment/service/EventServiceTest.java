@@ -36,9 +36,7 @@ public class EventServiceTest {
 
     @Test
     public void shouldCreateEventRecordInTheDatabase() {
-        event = new Event();
-        event.setEventId(EVENT_ID);
-        event.setEventDuration(50);
+        event = Event.builder().eventId(EVENT_ID).eventDuration(50).build();
 
         eventService.createEvent(event);
 

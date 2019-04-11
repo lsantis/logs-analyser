@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.assignment.service.LogParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-07T20:36:34" hostname="Lucianos-MacBook-Air.local" time="0.023">
+<testsuite name="com.assignment.service.LogParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-11T21:50:50" hostname="Lucianos-MacBook-Air.local" time="0.061">
   <properties/>
-  <testcase name="fileShouldNotBeFoundTest" classname="com.assignment.service.LogParserTest" time="0.008"/>
-  <testcase name="parseFileTest" classname="com.assignment.service.LogParserTest" time="0.014"/>
-  <system-out><![CDATA[21:36:34.394 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser parseFile started
-21:36:34.402 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser parseFile started
-21:36:34.415 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser parseFile finished
-21:36:34.415 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser.buildEventList method starting
-21:36:34.415 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser.buildEventList method completed
+  <testcase name="fileShouldNotBeFoundTest" classname="com.assignment.service.LogParserTest" time="0.023"/>
+  <testcase name="parseFileTest" classname="com.assignment.service.LogParserTest" time="0.037"/>
+  <system-out><![CDATA[22:50:50.383 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser parseFile started
+22:50:50.403 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser parseFile started
+22:50:50.439 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser parseFile finished
+22:50:50.440 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser.buildEventList method starting
+22:50:50.440 [Test worker] INFO com.assignment.service.implementation.LogParser - LogParser.buildEventList method completed
 ]]></system-out>
   <system-err><![CDATA[java.io.FileNotFoundException: random_path (No such file or directory)
 	at java.io.FileInputStream.open0(Native Method)

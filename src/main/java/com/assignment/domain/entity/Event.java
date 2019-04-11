@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Tolerate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,10 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "event")
 public class Event {
 
@@ -29,4 +27,8 @@ public class Event {
     private String host;
 
     private boolean alert;
+
+    //Hibernate requires this and Builder doesn't allow it so tolerating a non args constructor
+    @Tolerate
+    public Event(){}
 }
